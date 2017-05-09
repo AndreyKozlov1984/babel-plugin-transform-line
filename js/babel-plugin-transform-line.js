@@ -1,8 +1,5 @@
-export default ({
-    types
-}) => {
+module.exports =  ({ types }) => {
     const void0Expression = types.unaryExpression('void', types.numericLiteral(0), true);
-
     return {
         visitor: {
             ReferencedIdentifier (path) {
